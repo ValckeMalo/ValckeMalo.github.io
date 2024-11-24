@@ -32,6 +32,7 @@ footer {
 
   width: 100%;
   height: auto;
+  min-height: 50px;
 
   font-size: 18px;
   font-family: Impact;
@@ -39,7 +40,7 @@ footer {
   color: white;
 
   margin: 0;
-  margin-top: 10px;
+  margin-top: auto;
   padding: 0;
 }
 .footer-column {
