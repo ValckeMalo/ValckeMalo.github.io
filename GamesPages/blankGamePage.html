@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valcke Malo Protfolio | Official website</title>
+    <link rel="stylesheet" href="../CSS/Main.css" />
+    <link rel="stylesheet" href="../CSS/GamePage.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navigator">
+        <h1>Valcke Malo</h1>
+        <a href="../index.html">Games</a>
+        <a href="../Projects.html">Projects</a>
+        <a href="../About.html">About</a>
+        <a href="../Contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="background">
+        <img
+          src="../Images/GamesPages/EcocalypseKnights/EcocalypseKnightsBackground.png"
+          alt="HomeScreen"
+        />
+      </div>
+
+      <div class="game-buttons">
+        <button class="game-navigation-btn" onclick="showSection('overview')"id="overview-btn">
+          Overview
+        </button>
+        <button
+          class="game-navigation-btn"
+          onclick="showSection('contribution')"
+        >
+          Contribution
+        </button>
+      </div>
+
+      <div id="overview-section" class="section"></div>
+
+      <div id="contribution-section" class="section">
+        <div class="line">
+          <p>
+            Sur ce projet j'ai chié dans la bouche a tous le monde et c'était
+            très drôle en plus il ont fait ça gratuitement donc pourquoi pas en
+            profiter et toute la vie si on me le propose merci d'avoir écouté ce
+            podcast anonyme c'était moi avec moi même.
+          </p>
+          <img src="../Images/games1.jpg" alt="Test" />
+        </div>
+
+        <div class="line">
+          <img src="../Images/games1.jpg" alt="Test" />
+          <p>Le texte que je viens mettre avant</p>
+        </div>
+
+        <div class="line">
+          <div class="line-text-only">
+            <p>Coucou</p>
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="line-img-only">
+            <img src="../Images/games1.jpg" alt="Test" />
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="youtube-video">
+            <iframe
+              src="https://www.youtube.com/embed/628U1U_HI50"
+              title="trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../Js/GamePageEvent.js"></script>
+  </body>
+</html>

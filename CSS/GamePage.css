@@ -1,0 +1,143 @@
+/*Game Page .css*/
+
+/*First image displayed on the page*/
+.background {
+  width: 100%;
+  height: 50vh;
+
+  overflow: hidden;
+
+  position: absolute;
+  z-index: -1;
+
+  top: 0;
+  left: 0;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+
+  margin-top: 0px;
+}
+
+/*Button navigation*/
+.game-buttons {
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+  margin-top: calc(40vh + 5px);
+}
+.game-navigation-btn {
+  background-color: rgb(0, 132, 255);
+  color: white;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: white;
+
+  width: 150px;
+  height: 50px;
+
+  transition: background-color 0.5s ease;
+}
+.game-navigation-btn:hover {
+  background-color: blue;
+}
+
+/*Section (overview/contribution)*/
+.section {
+  display: none;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+}
+#overview-section {
+  background-color: transparent;
+}
+
+#contribution-section {
+  background-color: transparent;
+}
+
+/*Line text*/
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+
+  padding: 0px;
+
+  background-color: rgb(46, 84, 119);
+}
+.line img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  width: auto;
+  object-fit: contain;
+}
+.line p {
+  font-size: 18px;
+  color: white;
+
+  margin: 0;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.line-text-only {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+}
+.line-text-only p {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.line-img-only {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+.line-img-only img {
+  max-height: 300px;
+  display: block;
+}
+.youtube-video {
+  width: 100%;
+  margin: 20px, auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.youtube-video iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
