@@ -1,0 +1,46 @@
+main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.contact {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(46, 84, 119);
+
+  margin: 0px;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  width: 55%;
+  height: 600px;
+
+  border-radius: 32px;
+}
+.contact img {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  object-fit: contain;
+
+  width: 100%;
+  height: 90%;
+
+  padding: 0px;
+    margin: 0px;
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New';
+    margin: 0;
+    padding: 0;
+}
+.contact a:hover{
+    text-decoration: underline;
+}
