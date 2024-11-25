@@ -13,19 +13,22 @@
   color: white;
   background-color: rgb(46, 84, 119);
 }
+
 .dev-card p {
-    padding: 15px;
+  padding: 15px;
   text-decoration: none;
   color: white;
   text-align: left;
 }
+
 .dev-card img {
-    width: 160px;
-    height: 160px;
+  width: 160px;
+  height: 160px;
 
-    padding: 10px;
+  padding: 10px;
 
-    box-sizing: border-box;
-    background-clip: border-box;
-    border-radius: 49.9%;
+  box-sizing: border-box;
+  background-clip: border-box;
+  border-radius: 49.9%;
+  object-fit: cover;
 }
