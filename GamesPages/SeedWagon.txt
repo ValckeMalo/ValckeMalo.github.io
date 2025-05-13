@@ -1,0 +1,88 @@
+SeedWagon vous invite à poser le pied sur une île mystérieuse, baignée par la brise et le chant des oiseaux.
+Un havre de paix où chaque pas devient une découverte : forêts luxuriantes, plages argentées, collines brumeuses.
+Partout, des graines rares gisent, attendant d’être exhumées et plantées pour révéler leur magie.
+Ici, l’exploration rime avec émerveillement, et chaque zone de l’île vous offre un nouveau spectacle à contempler.
+
+Inspiré par la douceur visuelle de Caravan Sandwich et l’esprit d’aventure de Hover the Hill,
+SeedWagon propose un voyage contemplatif soutenu par des graphismes épurés et des mécaniques apaisantes.
+Construit sous Unreal Engine 5 en C++ et Blueprints, le jeu déploie des animations fluides,
+des éclairages chatoyants et un monde ouvert où la faune et la flore évoluent en temps réel.
+Vous vous promènerez à votre rythme, laissant le vent vous guider vers les secrets enfouis de l’île.
+
+Au cœur de SeedWagon réside un cycle de jardinage vivant : déterrez une graine, replantez-la au bon endroit, observez sa pousse et récoltez son fruit.
+Chaque plante a son propre cycle de vie et un rendu visuel unique ; certaines déclenchent des floraisons spectaculaires, d’autres forment des lianes sinueuses.
+Mais vos semis ne sont pas qu’esthétiques : ils activent d’antiques mécanismes souterrains.
+Replacez la graine adéquate dans un autel, et des portes secrètes s’ouvrent, des passages se révèlent, des énigmes millénaires s’éveillent.
+
+SeedWagon est un jeu exclusivement PC, fruit du travail passionné de sept programmeurs et six artistes dévoués.
+Chaque élément du monde a été soigneusement sculpté pour inviter à la contemplation et à la détente.
+Il n’y a pas d’obligation de vitesse, pas de compte à rebours : juste le plaisir de voir l’île s’épanouir sous vos mains.
+Laissez-vous porter par la douceur de l’environnement, écoutez la symphonie de la nature et faites fleurir chaque recoin de cet univers enchanteur.
+
+
+
+
+SeedWagon invites you to set foot on a mysterious island, caressed by breezes and the song of birds.
+A peaceful haven where every step becomes a discovery: lush forests, silver-sand beaches, misty hills.
+Everywhere, rare seeds lie waiting to be unearthed and planted to reveal their magic.
+Here, exploration is synonymous with wonder, and each corner of the island offers a new spectacle to behold.
+
+Inspired by the soft visuals of Caravan Sandwich and the adventurous spirit of Hover the Hill,
+SeedWagon offers a contemplative journey underpinned by clean graphics and soothing mechanics.
+Built in Unreal Engine 5 with C++ and Blueprints, the game delivers fluid animations,
+shimmering lighting, and an open world where flora and fauna evolve in real time.
+You’ll wander at your own pace, letting the wind guide you toward the island’s hidden secrets.
+
+At the heart of SeedWagon lies a living gardening cycle: dig up a seed, plant it in the right spot, watch it sprout, and harvest its bounty.
+Each plant follows its own life cycle and boasts a unique visual flourish—some burst into spectacular blooms, others grow twisting vines.
+But your seedlings are more than just beautiful: they activate ancient underground mechanisms.
+Place the correct seed on a sacred altar, and hidden doors open, secret passages unfold, and millennia-old puzzles awaken.
+
+SeedWagon is a PC-exclusive title born from the passionate work of seven programmers and six artists.
+Every element of this world has been meticulously crafted to inspire contemplation and relaxation.
+There’s no rush, no countdown—just the pleasure of watching the island flourish under your touch.
+Let yourself be carried away by the gentleness of the environment, listen to nature’s symphony, and bring every corner of this enchanting world to bloom.
+
+
+
+
+
+
+
+Lead Programmer
+En tant que un des chef d’orchestre technique du projet, j’ai façonné les fondations interactives qui subliment SeedWagon :
+
+• Gameplay événementiel des graines
+J’ai conçu et codé le système d’événements dynamiques lié aux graines rares : de leur découverte au déclenchement de phénomènes magiques,
+chaque semence réagit selon son cycle propre, révélant ponts éphémères et surprises visuelles.
+
+• Structures linéaires
+J’ai mis en place le système d’événements dynamiques des différentes structures permettant la découverte de d'endroit réculé ou de graine caché à travers toute l'île.
+
+• Mini-cinématiques
+Pour immerger le joueur dans chaque révélation, j’ai développé de courtes cinématiques intégrées directement dans le moteur,
+orchestrant caméra et animations Blueprint pour souligner les instants clés.
+
+• Interface d’upgrade du véhicule
+J’ai imaginé et réalisé un écran dédié entièrement : un menu d’amélioration du Wagon-Navette où l’on choisit composants,
+boosts et décorations. Navigation fluide, retours visuels immédiats et transitions soyeuses garantissent une montée en puissance à la fois claire et gratifiante.
+
+
+
+Lead Programmer
+As one of the technical maestros of the project, I shaped the interactive foundations that elevate SeedWagon:
+
+• Seed Event-Driven Gameplay
+I designed and coded the dynamic event system tied to rare seeds: from their discovery to the triggering of magical phenomena,
+each seed reacts according to its own cycle, unveiling fleeting bridges and visual surprises.
+
+• Linear Structures
+I implemented the dynamic event system for various structures, enabling the discovery of remote locations or hidden seeds scattered across the island.
+
+• Mini-Cinematics
+To immerse the player in every revelation, I developed brief cinematics integrated directly into the engine,
+orchestrating camera movements and Blueprint animations to underscore key moments.
+
+• Vehicle Upgrade Interface
+I conceived and built a dedicated screen entirely : an upgrade menu for the Wagon-Shuttle where players choose components, boosts, and decorations.
+Smooth navigation, instant visual feedback, and seamless transitions ensure a clear and rewarding progression.
