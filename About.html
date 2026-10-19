@@ -5,38 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valcke Malo Protfolio | Official website</title>
     <link rel="stylesheet" href="CSS/Main.css" />
-    <link rel="stylesheet" href="CSS/About.css" />
+    <link rel="stylesheet" href="CSS/About.css" /> 
+    <link rel="stylesheet" href="CSS/Portfolio.css" />
   </head>
-
+  
   <body>
     <header>
       <div class="navigator">
         <h1>Valcke Malo</h1>
-        <a href="index.html">Games</a>
-        <a href="Projects.html">Projects</a>
-        <a href="About.html">About</a>
-        <a href="Contact.html">Contact</a>
+        <a href="index.html" data-en="Projects" data-fr="Projets">Projects</a>
+        <a href="About.html" data-en="About" data-fr="À propos de moi">About</a>
+        <a href="Contact.html" data-en="Contact" data-fr="Contacte">Contact</a>
+        <button id="language-toggle" type="button">FR</button>
       </div>
     </header>
 
-    <main>
-      <div class="dev-card">
-        <img src="Images/Profile.jpg">
-        <p>
-          Hello, my name is Valcke Malo, and I am a last-year student at
-          Créajeux, a French school specializing in game development.<br>
-          I am passionate about gameplay programming and tools creation, which have
-          become my areas of focus during my studies.<br><br>
-          Over the past few years, I’ve worked on several small-group production projects, gaining
-          hands-on experience in designing and implementing engaging game mechanics.<br><br>
-          Sharing knowledge and collaborating with like-minded individuals is something I deeply
-          value, and I believe it is an integral part of growing as a developer.<br><br>
-          I am currently seeking an internship opportunity where I can deepen my
-          skills, contribute to innovative projects, and collaborate with a team of talented professionals.<br><br>
-          Determined, curious, and passionate, I am ready to take on new challenges and make a meaningful impact in the
-          world of game development.
+    <main class="about-page">
+      <section class="about-card">
+       <img src="Images/Profile.jpg" alt="Portrait of Malo Valcke" />
+
+       <div>
+        <p class="eyebrow"
+         data-en="ABOUT ME"
+         data-fr="À PROPOS DE MOI">ABOUT ME</p>
+
+      <h2 data-en="A curious and versatile developer"
+          data-fr="Un développeur curieux et polyvalent">
+        A curious and versatile developer
+      </h2>
+
+      <p data-en="I'm a developer with professional experience in video game development and a strong interest in software engineering. I enjoy exploring different technologies, learning new concepts and taking on varied technical challenges."
+         data-fr="Je suis développeur, avec une expérience professionnelle dans le jeu vidéo et un intérêt marqué pour le développement logiciel. J'aime explorer différentes technologies, apprendre de nouveaux concepts et relever des défis techniques variés.">
+        I'm a developer with professional experience in video game
+        development and a strong interest in software engineering.
+      </p>
+
+      <p data-en="At Artefacts Studio, I worked on existing games using Unity and C#, contributing to gameplay, UI, maintenance, bug fixes and in-game store updates. This experience taught me to work within an established codebase and to investigate issues involving communication between a game client and a server."
+         data-fr="Chez Artefacts Studio, j'ai travaillé sur des jeux existants avec Unity et C#, en intervenant sur le gameplay, l'interface, la maintenance, les corrections de bugs et les mises à jour de boutiques intégrées. Cette expérience m'a appris à travailler dans une base de code existante et à analyser des problèmes liés à la communication entre un jeu et un serveur.">
+        At Artefacts Studio, I worked on existing games using Unity and C#.
+      </p>
+
+      <p data-en="Outside professional game development, I build personal projects to explore other areas of software engineering. My current project is a cross-platform board game collection application using .NET MAUI, Supabase, PostgreSQL and the BoardGameGeek API."
+         data-fr="En dehors du développement professionnel de jeux vidéo, je réalise des projets personnels pour explorer d'autres domaines du développement logiciel. Mon projet actuel est une application multiplateforme de gestion de collection de jeux de société utilisant .NET MAUI, Supabase, PostgreSQL et l'API BoardGameGeek.">
+        Outside professional game development, I build personal projects.
+      </p>
+
+      <p data-en="I'm interested in opportunities in both software and game development. I'm curious by nature, enjoy testing new approaches and want to keep expanding my technical skills."
+         data-fr="Je suis intéressé par des opportunités aussi bien dans le développement logiciel que dans le jeu vidéo. De nature curieuse, j'aime tester de nouvelles approches et continuer à développer mes compétences techniques.">
+        I'm interested in opportunities in both software and game development.
+      </p>
+
+      <p class="about-cta">
+        <a href="index.html"
+           data-en="Explore my projects"
+           data-fr="Découvrir mes projets">Explore my projects</a>
+        <a href="Contact.html"
+           data-en="Contact me"
+           data-fr="Me contacter">Contact me</a>
         </p>
-      </div>
+       </div>
+      </section>
     </main>
 
     <footer>
@@ -49,4 +77,5 @@
       </div>
     </footer>
   </body>
+  <script src="Js/Portfolio.js"></script>
 </html>

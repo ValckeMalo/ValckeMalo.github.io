@@ -6,22 +6,25 @@
     <title>Valcke Malo Protfolio | Official website</title>
     <link rel="stylesheet" href="CSS/Main.css" />
     <link rel="stylesheet" href="CSS/Contact.css" />
+    <link rel="stylesheet" href="CSS/Portfolio.css" />
   </head>
 
   <body>
     <header>
       <div class="navigator">
         <h1>Valcke Malo</h1>
-        <a href="index.html">Games</a>
-        <a href="Projects.html">Projects</a>
-        <a href="About.html">About</a>
-        <a href="Contact.html">Contact</a>
+        <a href="index.html" data-en="Projects" data-fr="Projets">Projects</a>
+        <a href="About.html" data-en="About" data-fr="À propos de moi">About</a>
+        <a href="Contact.html" data-en="Contact" data-fr="Contacte">Contact</a>
+        <button id="language-toggle" type="button">FR</button>
       </div>
     </header>
 
     <main>
       <div class="contact">
-        <a href="CV.pdf" download>download the CV here</a>.
+        <a href="CV.pdf" download
+          data-en="Download my CV"
+          data-fr="Télécharger mon CV">Download my CV</a>
         <img src="CV.png">
       </div>
     </main>
@@ -36,4 +39,5 @@
       </div>
     </footer>
   </body>
+  <script src="Js/Portfolio.js"></script>
 </html>

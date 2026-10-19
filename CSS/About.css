@@ -33,3 +33,60 @@
   border-radius: 49.9%;
   object-fit: cover;
 }
+
+.about-page {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 36px 24px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 300px) minmax(0, 1fr);
+  align-items: start;
+  gap: 32px;
+}
+
+.about-card > img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-card h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 8px 0 20px;
+}
+
+.about-card p {
+  line-height: 1.75;
+}
+
+.about-card .eyebrow {
+  letter-spacing: 0.15em;
+  opacity: 0.8;
+}
+
+.about-cta {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.about-cta a {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card > img {
+    max-width: 240px;
+  }
+}

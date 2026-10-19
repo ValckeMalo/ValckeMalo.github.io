@@ -1,63 +1,337 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valcke Malo Protfolio | Official website</title>
-    <link rel="stylesheet" href="CSS/Main.css" />
-    <link rel="stylesheet" href="CSS/Games.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Malo Valcke, software and game developer specializing in C#, Unity and .NET." />
+  <title>Malo Valcke | Software & Game Developer</title>
+  <link rel="stylesheet" href="CSS/Main.css" />
+  <link rel="stylesheet" href="CSS/Games.css" />
+  <link rel="stylesheet" href="CSS/Portfolio.css" />
+</head>
 
-  <body>
-    <header>
-      <div class="navigator">
-        <h1>Valcke Malo</h1>
-        <a href="index.html">Games</a>
-        <a href="Projects.html">Projects</a>
-        <a href="About.html">About</a>
-        <a href="Contact.html">Contact</a>
-      </div>
-    </header>
+<body>
+  <header>
+    <div class="navigator">
+      <h1>Valcke Malo</h1>
+      <a href="index.html" data-en="Projects" data-fr="Projets">Projects</a>
+      <a href="About.html" data-en="About" data-fr="À propos">About</a>
+      <a href="Contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+      <button id="language-toggle" type="button" aria-label="Switch language">FR</button>
+    </div>
+  </header>
 
-    <main class="games-container">
-      <div class="game large" data-link="GamesPages/Ecocalypse_Knights.html">
-        <img src="Images/GamesPages/EcocalypseKnights/EcocalypseKnightsBackground.png" alt="HomeScreen" />
-        <div class="game overlay">
-          <p class="game overlay info">Ecocalypse Knights<br />2023</p>
+  <main class="portfolio">
+    <section class="portfolio-intro">
+      <p class="eyebrow"
+         data-en="SOFTWARE & GAME DEVELOPMENT"
+         data-fr="DÉVELOPPEMENT LOGICIEL & JEU VIDÉO">
+        SOFTWARE & GAME DEVELOPMENT
+      </p>
+
+      <h2 data-en="Things I've built"
+          data-fr="Ce que j'ai développé">
+        Things I've built
+      </h2>
+
+      <p data-en="Professional experience, software tools and personal projects. I enjoy exploring different technologies and solving technical problems."
+         data-fr="Expériences professionnelles, outils logiciels et projets personnels. J'aime explorer différentes technologies et résoudre des problèmes techniques.">
+        Professional experience, software tools and personal projects.
+        I enjoy exploring different technologies and solving technical problems.
+      </p>
+    </section>
+
+    <nav class="project-filters" aria-label="Project filters">
+      <button class="filter-button active" data-filter="all"
+              data-en="All" data-fr="Tout">All</button>
+      <button class="filter-button" data-filter="professional"
+              data-en="Professional" data-fr="Professionnel">Professional</button>
+      <button class="filter-button" data-filter="software"
+              data-en="Software & Tools" data-fr="Logiciels & outils">Software & Tools</button>
+      <button class="filter-button" data-filter="personal"
+              data-en="Personal" data-fr="Personnel">Personal</button>
+      <button class="filter-button" data-filter="games"
+              data-en="Video Games" data-fr="Jeux vidéo">Video Games</button>
+    </nav>
+
+    <section class="project-grid" aria-label="Projects">
+
+      <!-- PROFESSIONAL EXPERIENCE -->
+
+      <article class="project-card"
+               data-category="professional"
+               data-link="ProjectsPages/TerraformingMars.html">
+        <img src="Images/ProjectsPages/TFM/TFM_Colonies.png"
+             alt="Terraforming Mars: Colonies project placeholder" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Professional experience"
+                data-fr="Expérience professionnelle">Professional experience</span>
+          <h3>Terraforming Mars: Colonies</h3>
+          <p data-en="Gameplay, UI, maintenance, in-game store updates and client-side fixes for server communication."
+             data-fr="Gameplay, interface, maintenance, mises à jour de la boutique en jeu et corrections côté client liées à la communication avec le serveur.">
+            Gameplay, UI, maintenance, in-game store updates and client-side fixes for server communication.
+          </p>
+          <p class="tech-stack">Unity · C# · PC & Mobile</p>
         </div>
-      </div>
+      </article>
 
-      <div class="game large" data-link="GamesPages/Seed_Wagon.html">
-        <img src="Images/GamesPages/SeedWagon/SeedWagonBackground.png" alt="HomeScreen" />
-        <div class="game overlay">
-          <p class="game overlay info">Seed Wagon<br />2025</p>
+      <article class="project-card"
+               data-category="professional"
+               data-link="ProjectsPages/Carcassonne.html">
+        <img src="Images/ProjectsPages/Carcassonne/Carcassonne.jpg"
+             alt="Carcassonne project placeholder" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Professional experience"
+                data-fr="Expérience professionnelle">Professional experience</span>
+          <h3>Carcassonne</h3>
+          <p data-en="Maintenance of the in-game store within an existing digital board game."
+             data-fr="Maintenance de la boutique intégrée à un jeu de plateau numérique existant.">
+            Maintenance of the in-game store within an existing digital board game.
+          </p>
+          <p class="tech-stack">Unity · C#</p>
         </div>
-      </div>
+      </article>
 
-      <div class="game medium" data-link="GamesPages/Slaughter_Boy.html">
-        <img src="Images/GamesPages/SlaughterBoy/SlaughterBoyBackground.jpg" alt="Jeu 1" />
-        <div class="game overlay">
-          <p class="game overlay info">Slaughter boy<br />2023</p>
+      <article class="project-card"
+               data-category="professional"
+               data-link="ProjectsPages/DeckDuChaos.html">
+        <img src="Images/ProjectsPages/DeckOfChaos/DeckOfChaos.jpg"
+             alt="Le Donjon de Naheulbeuk: Le Deck du Chaos project placeholder" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Professional experience"
+                data-fr="Expérience professionnelle">Professional experience</span>
+          <h3>Le Donjon de Naheulbeuk: Le Deck du Chaos</h3>
+          <p data-en="Professional game development experience. Details of my contributions will be added here."
+             data-fr="Expérience professionnelle en développement de jeu vidéo. Le détail de mes contributions sera ajouté ici.">
+            Professional game development experience. Details of my contributions will be added here.
+          </p>
+          <p class="tech-stack">Game Development · C# · PC</p>
         </div>
-      </div>
+      </article>
 
-      <div class="game medium" data-link="GamesPages/Lost_In_Tagradar.html">
-        <img src="Images/GamesPages/LostInTagradar/LostInTagradarBackground.png" alt="Jeu 1" />
-        <div class="game overlay">
-          <p class="game overlay info">Lost in Tagradar<br />2024</p>
+      <!-- PERSONAL SOFTWARE PROJECT -->
+
+      <article class="project-card"
+               data-category="software personal"
+               data-link="ProjectsPages/LudoBox.html">
+        <img src="Images/ProjectsPages/LudoBox/LudoBox_Home.png"
+             alt="Board Game Tracker application placeholder" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Personal project · In development"
+                data-fr="Projet personnel · En développement">
+            Personal project · In development
+          </span>
+          <h3>LudoBox</h3>
+          <p data-en="A cross-platform board game collection app built with .NET MAUI, Supabase and the BoardGameGeek API."
+             data-fr="Une application multiplateforme de gestion de collection de jeux de société, développée avec .NET MAUI, Supabase et l'API BoardGameGeek.">
+            A cross-platform board game collection app built with .NET MAUI, Supabase and the BoardGameGeek API.
+          </p>
+          <p class="tech-stack">C# · .NET MAUI · PostgreSQL · Supabase · REST API</p>
         </div>
-      </div>
-    </main>
+      </article>
 
-    <footer>
-      <div class="footer-column">
-        <h3>LINK</h3>
-        <a href="https://github.com/ValckeMalo">GITHUB</a>
-        <a href="https://www.linkedin.com/in/malo-valcke-066550262/"
-          >LINKEDIN</a
-        >
-      </div>
-    </footer>
-    <script src="Js/GamesEvent.js"></script>
-  </body>
+      <!-- PERSONAL VIDEO GAMES -->
+
+      <article class="project-card"
+               data-category="games personal"
+               data-link="GamesPages/Ecocalypse_Knights.html">
+        <img src="Images/GamesPages/EcocalypseKnights/EcocalypseKnightsBackground.png"
+             alt="Ecocalypse Knights gameplay" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Video game · 2023"
+                data-fr="Jeu vidéo · 2023">Video game · 2023</span>
+          <h3>Ecocalypse Knights</h3>
+          <p data-en="A personal game project."
+             data-fr="Un projet de jeu vidéo personnel.">A personal game project.</p>
+        </div>
+      </article>
+
+      <article class="project-card"
+               data-category="games personal"
+               data-link="GamesPages/Seed_Wagon.html">
+        <img src="Images/GamesPages/SeedWagon/SeedWagonBackground_Title.png"
+             alt="Seed Wagon gameplay" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Video game · 2025"
+                data-fr="Jeu vidéo · 2025">Video game · 2025</span>
+          <h3>Seed Wagon</h3>
+          <p data-en="A game project focused on exploration and progression."
+             data-fr="Un projet de jeu axé sur l'exploration et la progression.">
+            A game project focused on exploration and progression.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card"
+               data-category="games personal"
+               data-link="GamesPages/Slaughter_Boy.html">
+        <img src="Images/GamesPages/SlaughterBoy/SlaughterBoyBackground.jpg"
+             alt="Slaughter Boy gameplay" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Video game · 2023"
+                data-fr="Jeu vidéo · 2023">Video game · 2023</span>
+          <h3>Slaughter Boy</h3>
+          <p data-en="A personal game project."
+             data-fr="Un projet de jeu vidéo personnel.">A personal game project.</p>
+        </div>
+      </article>
+
+      <article class="project-card"
+               data-category="games personal"
+               data-link="GamesPages/Lost_In_Tagradar.html">
+        <img src="Images/GamesPages/LostInTagradar/LostInTagradarBackground.png"
+             alt="Lost in Tagradar gameplay" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Video game · 2024"
+                data-fr="Jeu vidéo · 2024">Video game · 2024</span>
+          <h3>Lost in Tagradar</h3>
+          <p data-en="A personal game project."
+             data-fr="Un projet de jeu vidéo personnel.">A personal game project.</p>
+        </div>
+      </article>
+
+      <!-- SOFTWARE & TOOLS -->
+
+     <article class="project-card"
+               data-category="software personal"
+               data-link="ProjectsPages/OMGTools.html">
+        <img src="Images/ProjectsPages/OMGtools/OMGToolsBackground.jpg"
+             alt="OMG Tools project" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Development tools"
+                data-fr="Outils de développement">Development tools</span>
+          <h3>OMG Tools</h3>
+          <p data-en="Tools for creating and editing game cards, alongside an experimental combat system."
+             data-fr="Des outils de création et de modification de cartes de jeu, accompagnés d'un système de combat expérimental.">
+            Tools for creating and editing game cards.
+          </p>
+          <p class="tech-stack">C# · Unity</p>
+        </div>
+      </article>
+
+      <article class="project-card"
+               data-category="software personal"
+               data-link="ProjectsPages/LocalizationManager.html">
+        <img src="Images/ProjectsPages/LocalizationManager/BackgroundLMTool.png"
+             alt="Localization Manager interface" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Software tool"
+                data-fr="Outil logiciel">Software tool</span>
+          <h3>Localization Manager</h3>
+          <p data-en="A C# and WPF tool for managing localization data and exporting it to CSV, JSON, XML, C# and C++."
+             data-fr="Un outil en C# et WPF pour gérer des données de localisation et les exporter en CSV, JSON, XML, C# et C++.">
+            A C# and WPF tool for managing localization data.
+          </p>
+          <p class="tech-stack">C# · WPF · CSV · JSON · XML</p>
+        </div>
+      </article>
+
+      <article class="project-card"
+               data-category="software personal"
+               data-link="ProjectsPages/DungeonGenerator.html">
+        <img src="Images/ProjectsPages/DungeonGenerator/Dungeon.png"
+             alt="Procedurally generated dungeon" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Technical project"
+                data-fr="Projet technique">Technical project</span>
+          <h3>Dungeon Generator</h3>
+          <p data-en="A procedural dungeon generation project exploring level generation and room connections."
+             data-fr="Un projet de génération procédurale de donjons explorant la génération de niveaux et les connexions entre salles.">
+            A procedural dungeon generation project.
+          </p>
+          <p class="tech-stack">C# · Unity</p>
+        </div>
+      </article>
+
+      <!-- SCHOOL -->
+
+      <article class="project-card"
+               data-category="games personal"
+               data-link="ProjectsPages/TempleRaider.html">
+        <img src="Images/ProjectsPages/TempleRaider/TempleRaiderHome.png"
+             alt="Temple Raider gameplay" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Game prototype"
+                data-fr="Prototype de jeu">Game prototype</span>
+          <h3>Temple Raider</h3>
+          <p data-en="A solo puzzle game project using Unreal Engine 5, C++ and Blueprints."
+             data-fr="Un jeu de réflexion développé en solo avec Unreal Engine 5, C++ et Blueprints.">
+            A solo puzzle game project using Unreal Engine 5, C++ and Blueprints.
+          </p>
+          <p class="tech-stack">Unreal Engine 5 · C++ · Blueprints</p>
+        </div>
+      </article>
+
+      <article class="project-card"
+               data-category="games personal"
+               data-link="ProjectsPages/ParkourRace.html">
+        <img src="Images/ProjectsPages/ParkourRace/ParkourRaceStart.png"
+             alt="Parkour Race gameplay" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Game prototype"
+                data-fr="Prototype de jeu">Game prototype</span>
+          <h3>Parkour Race</h3>
+        </div>
+      </article>
+
+      <article class="project-card"
+               data-category="games personal"
+               data-link="ProjectsPages/HelixJump.html">
+        <img src="Images/ProjectsPages/HelixJump/HelixJump.png"
+             alt="Helix Jump prototype" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Short prototype"
+                data-fr="Prototype court">Short prototype</span>
+          <h3>Helix Jump</h3>
+          <p data-en="A short prototype created in approximately three hours."
+             data-fr="Un prototype réalisé en environ trois heures.">
+            A short prototype created in approximately three hours.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card"
+               data-category="games personal"
+               data-link="ProjectsPages/ZigZag.html">
+        <img src="Images/ProjectsPages/ZigZag/ZigZagGameplay.png"
+             alt="ZigZag prototype" />
+        <div class="project-card-content">
+          <span class="project-type"
+                data-en="Short prototype"
+                data-fr="Prototype court">Short prototype</span>
+          <h3>ZigZag</h3>
+          <p data-en="A short prototype created in approximately three hours."
+             data-fr="Un prototype réalisé en environ trois heures.">
+            A short prototype created in approximately three hours.
+          </p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-column">
+      <h3>LINK</h3>
+      <a href="https://github.com/ValckeMalo" target="_blank" rel="noopener noreferrer">GITHUB</a>
+      <a href="https://www.linkedin.com/in/malo-valcke-066550262/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+    </div>
+  </footer>
+</body>
+<script src="Js/Portfolio.js"></script>
 </html>
