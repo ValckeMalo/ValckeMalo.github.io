@@ -194,6 +194,13 @@
   font-size: .9rem;
 }
 
+.media-item img {
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 /* ---------- 5. Mobile ---------- */
 @media (max-width: 800px) {
   .page-hero { padding-top: 120px; min-height: 480px; }

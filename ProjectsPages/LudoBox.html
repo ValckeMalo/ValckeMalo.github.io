@@ -31,82 +31,176 @@
   </header>
 
   <main>
-    <!-- BANNIÈRE -->
+    <!-- BANNIÈRE HERO -->
     <section class="page-hero">
       <div class="page-hero-media">
-        <img src="../Images/ProjectsPages/LudoBox/LudoBox_Home.png" alt="" />
+        <img src="../Images/ProjectsPages/LudoBox/LudoBox_Home.png" alt="LudoBox Background" />
       </div>
 
       <div class="page-hero-inner">
         <p class="eyebrow"
-           data-en="PERSONAL PROJECT · IN PROGRESS"
-           data-fr="PROJET PERSONEL · EN DÉVELOPPEMENT">
-          PERSONAL PROJECT · IN PROGRESS
+           data-en="PERSONAL PROJECT · IN PROGRESS · FULL-STACK"
+           data-fr="PROJET PERSONNEL · EN DÉVELOPPEMENT · FULL-STACK">
+          PERSONAL PROJECT · IN PROGRESS · FULL-STACK
         </p>
 
         <h2>LudoBox</h2>
+        
         <p class="hero-summary"
-           data-en="A cross-platform board game collection app built with .NET MAUI, Supabase and the BoardGameGeek API."
-           data-fr="Une application multiplateforme de gestion de collection de jeux de société, développée avec .NET MAUI, Supabase et l'API BoardGameGeek.">
-          A cross-platform board game collection app built with .NET MAUI, Supabase and the BoardGameGeek API.
+           data-en="An ambitious cross-platform board game companion app built with .NET MAUI, C#, Supabase, PostgreSQL, and deep BoardGameGeek API integration."
+           data-fr="Une application compagnon multiplateforme ambitieuse pour jeux de société, développée avec .NET MAUI, C#, Supabase, PostgreSQL et une intégration poussée de l'API BoardGameGeek.">
+          An ambitious cross-platform board game companion app built with .NET MAUI, C#, Supabase, PostgreSQL, and deep BoardGameGeek API integration.
         </p>
 
         <ul class="tag-list">
-          <li>C#</li>
           <li>.NET MAUI</li>
-          <li>PostreSQL</li>
+          <li>C# / MVVM</li>
           <li>Supabase</li>
-          <li>Rest API</li>
-          <li>Mobile</li>
-          <li>PC</li>
+          <li>PostgreSQL</li>
+          <li>BoardGameGeek API</li>
+          <li>Mobile & PC</li>
         </ul>
       </div>
     </section>
 
-    <!-- CONTENU -->
+    <!-- CONTENU PRINCIPAL -->
     <div class="page-content">
+      <!-- PRÉSENTATION COMPLÈTE -->
       <section>
         <h3 data-en="Overview" data-fr="Présentation">Overview</h3>
-        <div class="placeholder"
-             data-en="Add your project overview here."
-             data-fr="Ajoute la présentation du projet ici.">Add your project overview here.</div>
+        
+        <p data-en="LudoBox is a comprehensive, cross-platform companion application designed specifically for board game enthusiasts. Targeted primarily at Android mobile devices while maintaining full cross-platform compatibility with PC, LudoBox bridges the gap between digital collection management and physical board gaming. The application serves as an all-in-one ecosystem allowing players to explore vast databases, track their personal libraries, discover new titles through intelligent randomization, and interact with a community-driven cloud backend."
+           data-fr="LudoBox est une application compagnon multiplateforme complète, conçue spécifiquement pour les passionnés de jeux de société. Ciblant en priorité les appareils mobiles Android tout en garantissant une compatibilité multiplateforme sur PC, LudoBox fait le pont entre la gestion numérique de collection et le monde physique des jeux de plateau. L'application s'impose comme un écosystème tout-en-un permettant aux joueurs d'explorer de vastes bases de données, de suivre leurs bibliothèques personnelles, de découvrir de nouveaux titres grâce à un système de recommandations aléatoires et d'interagir avec un backend cloud communautaire.">
+          LudoBox is a comprehensive, cross-platform companion application designed specifically for board game enthusiasts. Targeted primarily at Android mobile devices while maintaining full cross-platform compatibility with PC, LudoBox bridges the gap between digital collection management and physical board gaming. The application serves as an all-in-one ecosystem allowing players to explore vast databases, track their personal libraries, discover new titles through intelligent randomization, and interact with a community-driven cloud backend.
+        </p>
+        <br>
+        <p data-en="The user experience is meticulously structured around 5 core pillars, seamlessly accessible via a modern bottom navigation toolbar:"
+           data-fr="L'expérience utilisateur est méticuleusement structurée autour de 5 piliers centraux, accessibles de manière fluide via une barre de navigation inférieure moderne :">
+          The user experience is meticulously structured around 5 core pillars, seamlessly accessible via a modern bottom navigation toolbar:
+        </p>
+        <br>
+        <ul>
+          <li data-en="Home Dashboard: Features dynamic game carousels categorized by smart criteria, such as daily and weekly rotating lists, trending hits, and real-time new releases. Each category is displayed in smooth, draggable horizontal rows equipped with 'View All' shortcuts that bridge directly into filtered search queries."
+              data-fr="Tableau de bord (Accueil) : Propose des carrousels de jeux dynamiques catégorisés selon des critères intelligents (listes tournantes quotidiennes et hebdomadaires, tendances, nouveautés en temps réel). Chaque catégorie s'affiche sous forme de lignes horizontales défilantes avec des raccourcis 'Voir tout' menant directement vers des recherches filtrées.">
+            <strong>Home Dashboard:</strong> Features dynamic game carousels categorized by smart criteria, such as daily and weekly rotating lists, trending hits, and real-time new releases. Each category is displayed in smooth, draggable horizontal rows equipped with 'View All' shortcuts that bridge directly into filtered search queries.
+          </li>
+          <br>
+          <li data-en="Random Discovery Engine: A dedicated serendipity tool where users configure specific filters (player count, mechanics, duration, and complexity) to instantly generate a randomized game recommendation that opens its complete profile sheet."
+              data-fr="Moteur de découverte aléatoire : Un outil de sérendipité dédié où l'utilisateur configure des filtres précis (nombre de joueurs, mécaniques, durée, complexité) pour générer instantanément une recommandation de jeu aléatoire ouvrant sa fiche complète.">
+            <strong>Random Discovery Engine:</strong> A dedicated serendipity tool where users configure specific filters (player count, mechanics, duration, and complexity) to instantly generate a randomized game recommendation that opens its complete profile sheet.
+          </li>
+          <br>
+          <li data-en="Advanced Search & Database: A robust database grid powered by a top-tier search bar and an expansive filtering matrix. Users can filter by player count, game duration, weight/complexity, mechanics, and thematic categories. Dropdowns handle precise single or multi-selections, accompanied by an instant master-reset trigger."
+              data-fr="Recherche avancée & Base de données : Une grille de données robuste alimentée par une barre de recherche de premier plan et une matrice de filtres exhaustive. Il est possible de filtrer par nombre de joueurs, durée, complexité, mécaniques et thématiques. Des menus déroulants gèrent la sélection unique ou multiple, complétés par un déclencheur de réinitialisation globale.">
+            <strong>Advanced Search & Database:</strong> A robust database grid powered by a top-tier search bar and an expansive filtering matrix. Users can filter by player count, game duration, weight/complexity, mechanics, and thematic categories. Dropdowns handle precise single or multi-selections, accompanied by an instant master-reset trigger.
+          </li>
+          <br>
+          <li data-en="Virtual Library Showcase: A visual paradigm shift representing physical board game boxes arranged dynamically on customizable virtual shelves. Each box reflects real-world scale proportions and acts as an interactive portal to the game's detailed sheet, complete with customizable seasonal or holiday background themes."
+              data-fr="Vitrine de bibliothèque virtuelle : Un paradigme visuel représentant les boîtes physiques de jeux de société disposées dynamiquement sur des étagères virtuelles personnalisables. Chaque boîte respecte les proportions du monde réel et sert de portail interactif vers la fiche détaillée, le tout agrémenté de thèmes d'arrière-plan saisonniers ou festifs.">
+            <strong>Virtual Library Showcase:</strong> A visual paradigm shift representing physical board game boxes arranged dynamically on customizable virtual shelves. Each box reflects real-world scale proportions and acts as an interactive portal to the game's detailed sheet, complete with customizable seasonal or holiday background themes.
+          </li>
+          <br>
+          <li data-en="User Profile & Community Hub: Centralizes account management through statistical breakdown grids (owned games, rated titles, wishlist size, played counts), custom lists (Wishlist, Owned, Played), favorite shortcuts, and a chronological feed of community reviews with deep-linking capabilities."
+              data-fr="Profil utilisateur & Hub communautaire : Centralise la gestion du compte à travers des grilles de statistiques (jeux possédés, notés, liste de souhaits, parties jouées), des listes personnalisées (Wishlist, Possédés, Joués), des raccourcis de favoris et un fil chronologique d'avis communautaires dotés de liens profonds.">
+            <strong>User Profile & Community Hub:</strong> Centralizes account management through statistical breakdown grids (owned games, rated titles, wishlist size, played counts), custom lists (Wishlist, Owned, Played), favorite shortcuts, and a chronological feed of community reviews with deep-linking capabilities.
+          </li>
+        </ul>
       </section>
 
+      <!-- ENVIRONNEMENT TECHNIQUE -->
       <section>
-        <h3 data-en="Technical environment" data-fr="Environnement technique">Technical environment</h3>
-        <div class="placeholder"
-             data-en="Technologies / tools"
-             data-fr="Technologies / outils">Technologies / tools</div>
+        <h3 data-en="Technical Environment & Architecture" data-fr="Environnement technique & Architecture">Technical Environment & Architecture</h3>
+        <p data-en="LudoBox is architected as a modern, scalable full-stack ecosystem leveraging cutting-edge frameworks for high performance on both mobile and desktop environments:"
+           data-fr="LudoBox est conçu comme un écosystème full-stack moderne et évolutif, s'appuyant sur des frameworks de pointe pour garantir de hautes performances sur mobile et bureau :">
+          LudoBox is architected as a modern, scalable full-stack ecosystem leveraging cutting-edge frameworks for high performance on both mobile and desktop environments:
+        </p>
+        <br>
+        <ul>
+          <li data-en="Client Framework: Developed using .NET MAUI (C#) adhering to MVVM design patterns, ensuring native rendering, high fluidity, and clean separation of concerns across Android and Windows targets."
+              data-fr="Framework Client : Développé en .NET MAUI (C#) selon les principes du design pattern MVVM, garantissant un rendu natif, une grande fluidité et une séparation propre des responsabilités sur les cibles Android et Windows.">
+            <strong>Client Framework:</strong> Developed using .NET MAUI (C#) adhering to MVVM design patterns, ensuring native rendering, high fluidity, and clean separation of concerns across Android and Windows targets.
+          </li>
+          <br>
+          <li data-en="Cloud Backend & Database: Powered by Supabase and PostgreSQL, utilizing relational tables, secure schema views, and robust Row-Level Security (RLS) policies for user data protection."
+              data-fr="Cloud Backend & Base de données : Propulsé par Supabase et PostgreSQL, utilisant des tables relationnelles, des vues de schémas sécurisées et des politiques de sécurité robustes (Row-Level Security / RLS) pour la protection des données utilisateur.">
+            <strong>Cloud Backend & Database:</strong> Powered by Supabase and PostgreSQL, utilizing relational tables, secure schema views, and robust Row-Level Security (RLS) policies for user data protection.
+          </li>
+          <br>
+          <li data-en="External Data Pipeline: Custom C# background routines and REST API integration consuming data feeds from BoardGameGeek (BGG) to continuously parse, normalize, and feed the local repository."
+              data-fr="Pipeline de données externe : Routines d'arrière-plan personnalisées en C# et intégration d'API REST consommant les flux de données de BoardGameGeek (BGG) pour analyser, normaliser et alimenter continuellement le répertoire local.">
+            <strong>External Data Pipeline:</strong> Custom C# background routines and REST API integration consuming data feeds from BoardGameGeek (BGG) to continuously parse, normalize, and feed the local repository.
+          </li>
+          <br>
+          <li data-en="Tooling & Prototyping: UI layouts meticulously prototyped in Figma and translated into responsive MAUI XAML components, supported by custom Visual Studio extension services for seamless endpoint querying."
+              data-fr="Outils & Prototypage : Agencements d'interface méticuleusement prototypés sur Figma et traduits en composants MAUI XAML responsives, pris en charge par des services d'extension Visual Studio personnalisés pour l'interrogation fluide des points de terminaison.">
+            <strong>Tooling & Prototyping:</strong> UI layouts meticulously prototyped in Figma and translated into responsive MAUI XAML components, supported by custom Visual Studio extension services for seamless endpoint querying.
+          </li>
+        </ul>
       </section>
 
+      <!-- MES CONTRIBUTIONS -->
       <section>
-        <h3 data-en="My contributions" data-fr="Mes contributions">My contributions</h3>
-        <div class="placeholder"
-             data-en="Write about your tasks and responsibilities here."
-             data-fr="Décris tes tâches et responsabilités ici.">Write about your tasks and responsibilities here.</div>
+        <h3 data-en="My Contributions & Technical Ownership" data-fr="Mes contributions & Responsabilités techniques">My Contributions & Technical Ownership</h3>
+        <p data-en="As the sole creator and architect of LudoBox, I handled every layer of the development lifecycle, demonstrating end-to-end technical mastery:"
+           data-fr="En tant que créateur et architecte unique de LudoBox, j'ai pris en charge chaque couche du cycle de vie du développement, démontrant une maîtrise technique de bout en bout :">
+          As the sole creator and architect of LudoBox, I handled every layer of the development lifecycle, demonstrating end-to-end technical mastery:
+        </p>
+        <br>
+        <ul>
+          <li data-en="Full-Stack Backend Engineering: Provisioned and structured the Supabase PostgreSQL database, designing optimized schemas, relational foreign keys, and secure authentication flows linked directly to table views."
+              data-fr="Ingénierie Backend Full-Stack : Provisionnement et structuration de la base de données Supabase PostgreSQL, conception de schémas optimisés, de clés étrangères relationnelles et de flux d'authentification sécurisés liés aux vues de tables.">
+            <strong>Full-Stack Backend Engineering:</strong> Provisioned and structured the Supabase PostgreSQL database, designing optimized schemas, relational foreign keys, and secure authentication flows linked directly to table views.
+          </li>
+          <br>
+          <li data-en="Data Ingestion & BGG Pipeline: Engineered automated extraction tools to retrieve raw board game datasets from the BoardGameGeek API, processing complex XML/JSON structures to populate the relational database cleanly."
+              data-fr="Ingestion de données & Pipeline BGG : Conception d'outils d'extraction automatisés pour récupérer les jeux bruts depuis l'API BoardGameGeek, traitant des structures XML/JSON complexes pour alimenter proprement la base de données relationnelle.">
+            <strong>Data Ingestion & BGG Pipeline:</strong> Engineered automated extraction tools to retrieve raw board game datasets from the BoardGameGeek API, processing complex XML/JSON structures to populate the relational database cleanly.
+          </li>
+          <br>
+          <li data-en="Cross-Platform UI/UX Implementation: Translated Figma design systems into reactive .NET MAUI views, building custom controls, fluid bottom navigation bars, data bindings, and adaptive layout grids for optimal mobile usability."
+              data-fr="Implémentation UI/UX multiplateforme : Traduction des systèmes de design Figma en vues .NET MAUI réactives, création de contrôles personnalisés, de barres de navigation fluides, de liaisons de données et de grilles adaptatives pour une ergonomie mobile optimale.">
+            <strong>Cross-Platform UI/UX Implementation:</strong> Translated Figma design systems into reactive .NET MAUI views, building custom controls, fluid bottom navigation bars, data bindings, and adaptive layout grids for optimal mobile usability.
+          </li>
+          <br>
+          <li data-en="API Extension Services: Developed specialized service layers and Visual Studio extensions in C# to abstract HTTP requests and seamlessly communicate with Supabase endpoints from the mobile client."
+              data-fr="Services d'extension API : Développement de couches de services spécialisées et d'extensions Visual Studio en C# pour abstraire les requêtes HTTP et communiquer de manière transparente avec les points de terminaison Supabase depuis le client mobile.">
+            <strong>API Extension Services:</strong> Developed specialized service layers and Visual Studio extensions in C# to abstract HTTP requests and seamlessly communicate with Supabase endpoints from the mobile client.
+          </li>
+        </ul>
       </section>
 
+      <!-- LIENS & ACCÈS -->
       <section>
-        <h3 data-en="Gallery" data-fr="Galerie">Gallery</h3>
-        <div class="placeholder"
-             data-en="Replace this box with an image or screenshot."
-             data-fr="Remplace cette zone par une image ou une capture.">Replace this box with an image or screenshot.</div>
+        <h3 data-en="Links & Resources" data-fr="Liens & Ressources">Links & Resources</h3>
+        <p>
+          <a href="https://github.com/ValckeMalo" target="_blank" style="color: var(--theme-accent); font-weight: bold;" data-en="→ View GitHub Repository" data-fr="→ Voir le dépôt GitHub">→ View GitHub Repository</a>
+        </p>
       </section>
     </div>
 
-    <!-- CAPTURES ET MÉDIAS -->
+    <!-- CAPTURES ET MÉDIAS (CORRECTION DU CROP MOBILE AVEC OBJECT-FIT: CONTAIN) -->
     <section class="page-media">
-      <h3 data-en="Screenshots and media" data-fr="Captures et médias">Screenshots and media</h3>
+      <h3 data-en="Screenshots & UI Mockups" data-fr="Captures & Maquettes UI">Screenshots & Maquettes UI</h3>
 
       <div class="media-grid">
         <figure class="media-item">
-          <div class="media-slot" data-en="Image slot 1" data-fr="Emplacement image 1">Image slot 1</div>
-          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+          <img src="../Images/ProjectsPages/LudoBox/LudoBox_Home.png" alt="LudoBox Home Page" style="object-fit: contain; background: rgba(0,0,0,0.4); padding: 10px;" />
+          <figcaption data-en="Home screen dashboard mockup with category rows" data-fr="Maquette du tableau de bord d'accueil avec les lignes de catégories">Home screen dashboard mockup with category rows</figcaption>
         </figure>
 
         <figure class="media-item">
-          <div class="media-slot" data-en="Image slot 2" data-fr="Emplacement image 2">Image slot 2</div>
-          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+          <img src="../Images/ProjectsPages/LudoBox/LudoBox_Profile.png" alt="LudoBox Profile Page" style="object-fit: contain; background: rgba(0,0,0,0.4); padding: 10px;" />
+          <figcaption data-en="User profile screen displaying statistics and lists" data-fr="Écran du profil utilisateur affichant les statistiques et listes">User profile screen displaying statistics and lists</figcaption>
+        </figure>
+
+        <figure class="media-item">
+          <img src="../Images/ProjectsPages/LudoBox/LudoBox_Search.png" alt="LudoBox Search Page" style="object-fit: contain; background: rgba(0,0,0,0.4); padding: 10px;" />
+          <figcaption data-en="Search and filter matrix interface layout" data-fr="Agencement de l'interface de recherche et de la matrice de filtres">Search and filter matrix interface layout</figcaption>
+        </figure>
+
+        <figure class="media-item">
+          <img src="../Images/ProjectsPages/LudoBox/LudoBox_Settings.png" alt="LudoBox Settings Page" style="object-fit: contain; background: rgba(0,0,0,0.4); padding: 10px;" />
+          <figcaption data-en="Settings and preferences configuration panel" data-fr="Panneau de configuration des paramètres et préférences">Settings and preferences configuration panel</figcaption>
         </figure>
       </div>
     </section>
@@ -114,9 +208,22 @@
 
   <footer>
     <div class="footer-column">
-      <h3>LINK</h3>
+      <h3>LINKS</h3>
       <a href="https://github.com/ValckeMalo">GITHUB</a>
       <a href="https://www.linkedin.com/in/malo-valcke-066550262/">LINKEDIN</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>STACK</h3>
+      <p>.NET MAUI (C#)</p>
+      <p>Supabase / PostgreSQL</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>TEAM</h3>
+      <p><strong>DEVELOPER:</strong> 
+        <a href="https://www.linkedin.com/in/malo-valcke-066550262/" target="_blank">Malo Valcke</a>
+      </p>
     </div>
   </footer>
 
