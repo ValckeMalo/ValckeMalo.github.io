@@ -1,133 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valcke Malo Protfolio | Official website</title>
-    <link rel="stylesheet" href="../CSS/Main.css" />
-    <link rel="stylesheet" href="../CSS/GamePage.css" />
-    <link rel="stylesheet" href="../CSS/Portfolio.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helix Jump | Malo Valcke</title>
+  <link rel="stylesheet" href="../CSS/Main.css" />
+  <link rel="stylesheet" href="../CSS/Portfolio.css" />
+  <link rel="stylesheet" href="../CSS/ProjectPage.css" />
 </head>
 
-<body>
+<body class="has-hero"
+      style="--theme-top: #2d451e; 
+             --theme-mid: #192b10; 
+             --theme-bottom: #0a1306; 
+             --theme-dark: 20, 34, 14; 
+             --theme-card: 42, 68, 28; 
+             --theme-accent: #e879f9; 
+             --hero-position: center 40%">
+
   <a class="back-to-projects" href="../index.html" data-en="← Back to projects" data-fr="← Retour aux projets" aria-label="Back to projects">← Back to projects</a>
 
-    <header>
-        <div class="navigator">
-            <h1>Valcke Malo</h1>
-            <a href="../index.html" data-en="Projects" data-fr="Projets">Projects</a>
-            <a href="../About.html" data-en="About" data-fr="À propos de moi">About</a>
-            <a href="../Contact.html" data-en="Contact" data-fr="Contacte">Contact</a>
-            <button id="language-toggle" type="button">FR</button>
-        </div>
-    </header>
+  <header>
+    <div class="navigator">
+      <h1>Malo Valcke</h1>
+      <a href="../index.html" data-en="Projects" data-fr="Projets">Projects</a>
+      <a href="../About.html" data-en="About" data-fr="À propos">About</a>
+      <a href="../Contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+      <button id="language-toggle" type="button">FR</button>
+    </div>
+  </header>
 
-    <div class="page">
-        <div class="background">
-            <img src="../Images/ProjectsPages/HelixJump/HelixJump.png" alt="HomeScreen" />
-        </div>
-
-        <div class="project-hero-content">
-        <span class="project-kicker">PERSONAL PROJECT</span>
-        <h1>Helix Jump</h1>
+  <main>
+    <!-- BANNIÈRE -->
+    <section class="page-hero">
+      <div class="page-hero-media">
+        <img src="../Images/ProjectsPages/HelixJump/HelixJump.png" alt="" />
       </div>
 
-      <div class="game-buttons">
-            <button class="game-navigation-btn" onclick="showUniqueSection('overview')" id="overview-btn">
-                Overview
-            </button>
-            <button class="game-navigation-btn"
-                onclick="window.location.href='https://github.com/ValckeMalo/HelixJump';">Github Link</button>
-        </div>
+      <div class="page-hero-inner">
+        <p class="eyebrow"
+           data-en="GAME PROTOTYPE"
+           data-fr="PROTOTYPE DE JEU">
+          Game prototype
+        </p>
 
-        <div id="overview-section" class="section">
-            <div class="line">
-                <div class="line-img-only">
-                    <img src="../Images/ProjectsPages/HelixJump/HelixJump.png">
-                </div>
-            </div>
+        <h2>Helix Jump</h2>
 
-            <div class="line">
-                <div class="line-text-only">
-                    <p>
-                        In a challenging yet rewarding school exercise, my task was to recreate the core gameplay of
-                        Helix Jump within a strict three-hour time limit.<br>
-                        This project focused on delivering the essence of the game: dynamic platform navigation combined
-                        with engaging, physics-based mechanics.<br>
-                    </p>
-                </div>
-            </div>
+        <p class="hero-summary"
+           data-en="A short prototype created in approximately three hours."
+             data-fr="Un prototype réalisé en environ trois heures.">
+           A short prototype created in approximately three hours.
+        </p>
 
-            <div class="line">
-                <div class="line-text-only">
-                    <p>
-                        The recreated game included:<br>
-                        <br>
-                        Rotatable platforms forming a vertical tower with gaps for the ball to fall through.<br>
-                        A player-controlled bouncing ball, responding to gravity and collisions.<br>
-                        Fail states when the ball hits certain platform zones, adding risk and intensity to the
-                        gameplay.<br>
-                        The aim was to replicate the core mechanics of Helix Jump while optimizing for time and
-                        simplicity, ensuring a functional prototype by the end of the session.<br>
-                    </p>
-                </div>
-            </div>
+        <ul class="tag-list">
+          <li>Unity</li>
+          <li>C#</li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="line">
-                <div class="line-text-only">
+    <!-- CONTENU -->
+    <div class="page-content">
+      <section>
+        <h3 data-en="Overview" data-fr="Présentation">Overview</h3>
+        <div class="placeholder"
+             data-en="Add your project overview here."
+             data-fr="Ajoute la présentation du projet ici.">Add your project overview here.</div>
+      </section>
 
-                    <p>
-                        In this time-constrained project, I focused on:<br>
-                        <br>
-                        Implementing platform rotation, allowing smooth and responsive player input for navigating the
-                        ball.<br>
-                        Physics-based ball movement, simulating realistic bounces and interactions with the tower.<br>
-                        Adding a basic level progression system, creating an engaging flow as the player descends. <br>
-                    </p>
-                </div>
-            </div>
+      <section>
+        <h3 data-en="Technical environment" data-fr="Environnement technique">Technical environment</h3>
+        <div class="placeholder"
+             data-en="Technologies / tools"
+             data-fr="Technologies / outils">Technologies / tools</div>
+      </section>
 
-            <div class="line">
-                <div class="line-text-only">
-                    <p>
-                        This exercise was a testament to the importance of rapid prototyping and prioritizing essential
-                        features under pressure.<br>
-                        It reinforced my understanding of Unity’s physics system and how to integrate it effectively
-                        into gameplay.<br>
-                    </p>
-                </div>
-            </div>
-        </div>
+      <section>
+        <h3 data-en="My contributions" data-fr="Mes contributions">My contributions</h3>
+        <div class="placeholder"
+             data-en="Write about your tasks and responsibilities here."
+             data-fr="Décris tes tâches et responsabilités ici.">Write about your tasks and responsibilities here.</div>
+      </section>
 
+      <section>
+        <h3 data-en="Gallery" data-fr="Galerie">Gallery</h3>
+        <div class="placeholder"
+             data-en="Replace this box with an image or screenshot."
+             data-fr="Remplace cette zone par une image ou une capture.">Replace this box with an image or screenshot.</div>
+      </section>
     </div>
 
-    <footer>
-        <div class="footer-column">
-            <h3>LINK</h3>
-            <a href="https://github.com/ValckeMalo">GITHUB</a>
-            <a href="https://www.linkedin.com/in/malo-valcke-066550262/">LINKEDIN</a>
-        </div>
+    <!-- CAPTURES ET MÉDIAS -->
+    <section class="page-media">
+      <h3 data-en="Screenshots and media" data-fr="Captures et médias">Screenshots and media</h3>
 
-        <div class="footer-column">
-            <h3>ENGINE</h3>
-            <p>C#</p>
-            <a href="https://unity.com/fr">UNITY</a>
-        </div>
+      <div class="media-grid">
+        <figure class="media-item">
+          <div class="media-slot" data-en="Image slot 1" data-fr="Emplacement image 1">Image slot 1</div>
+          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+        </figure>
 
-        <div class="footer-column">
-            <h3>Team</h3>
+        <figure class="media-item">
+          <div class="media-slot" data-en="Image slot 2" data-fr="Emplacement image 2">Image slot 2</div>
+          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-            <div class="team-grid">
-                <div class="team-line">
-                    <h4>DEVELOPERS :</h4>
-                    <a href="https://www.linkedin.com/in/malo-valcke-066550262/" target="_blank">Valcke Malo</a>
-                </div>
+  <footer>
+    <div class="footer-column">
+      <h3>LINK</h3>
+      <a href="https://github.com/ValckeMalo">GITHUB</a>
+      <a href="https://www.linkedin.com/in/malo-valcke-066550262/">LINKEDIN</a>
+    </div>
+  </footer>
 
-            </div>
-        </div>
-    </footer>
+  <script src="../Js/Portfolio.js"></script>
 </body>
-<script src="../Js/GamePageEvent.js"></script>
-<script src="../Js/Portfolio.js"></script>
 </html>

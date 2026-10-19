@@ -1,118 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valcke Malo Protfolio | Official website</title>
-    <link rel="stylesheet" href="../CSS/Main.css" />
-    <link rel="stylesheet" href="../CSS/GamePage.css" />
-    <link rel="stylesheet" href="../CSS/Portfolio.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parkour Race | Malo Valcke</title>
+  <link rel="stylesheet" href="../CSS/Main.css" />
+  <link rel="stylesheet" href="../CSS/Portfolio.css" />
+  <link rel="stylesheet" href="../CSS/ProjectPage.css" />
 </head>
 
-<body>
+<body class="has-hero"
+      style="--theme-top: #1e3a5f; 
+             --theme-mid: #102036; 
+             --theme-bottom: #08101c; 
+             --theme-dark: 16, 30, 50; 
+             --theme-card: 30, 60, 96; 
+             --theme-accent: #f97316; 
+             --hero-position: center 20%">
+
   <a class="back-to-projects" href="../index.html" data-en="← Back to projects" data-fr="← Retour aux projets" aria-label="Back to projects">← Back to projects</a>
 
-    <header>
-        <div class="navigator">
-            <h1>Valcke Malo</h1>
-            <a href="../index.html" data-en="Projects" data-fr="Projets">Projects</a>
-            <a href="../About.html" data-en="About" data-fr="À propos de moi">About</a>
-            <a href="../Contact.html" data-en="Contact" data-fr="Contacte">Contact</a>
-            <button id="language-toggle" type="button">FR</button>
-        </div>
-    </header>
+  <header>
+    <div class="navigator">
+      <h1>Malo Valcke</h1>
+      <a href="../index.html" data-en="Projects" data-fr="Projets">Projects</a>
+      <a href="../About.html" data-en="About" data-fr="À propos">About</a>
+      <a href="../Contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+      <button id="language-toggle" type="button">FR</button>
+    </div>
+  </header>
 
-    <div class="page">
-        <div class="background">
-            <img src="../Images/ProjectsPages/ParkourRace/ParkourRaceStart.png" alt="HomeScreen" />
-        </div>
-
-        <div class="project-hero-content">
-        <span class="project-kicker">GAME PROJECT</span>
-        <h1>Parkour Race</h1>
+  <main>
+    <!-- BANNIÈRE -->
+    <section class="page-hero">
+      <div class="page-hero-media">
+        <img src="../Images/ProjectsPages/ParkourRace/ParkourRaceIddle.png" alt="" />
       </div>
 
-      <div class="game-buttons">
-            <button class="game-navigation-btn" onclick="showUniqueSection('overview')" id="overview-btn">
-                Overview
-            </button>
-            <button class="game-navigation-btn"
-                onclick="window.location.href='https://github.com/ValckeMalo/ParkourRace';">Github Link</button>
-        </div>
+      <div class="page-hero-inner">
+        <p class="eyebrow"
+           data-en="GAME PROTOTYPE"
+           data-fr="PROTOTYPE DE JEU">
+          Game prototype
+        </p>
 
-        <div id="overview-section" class="section">
+        <h2>Parkour Race</h2>
 
-            <div class="line">
-                <div class="line-text-only">
-                    <p>
-                        Over the course of several weeks, I embarked on a project to learn Unreal Engine 5 by recreating the core gameplay of Fall Guys in a solo effort.<br>
-                        This exercise was designed to explore the engine’s capabilities while building a fun and dynamic gameplay experience inspired by the chaotic charm of the original game.<br>
-                    </p>
-                </div>
-            </div>
+        <p class="hero-summary"
+           data-en="A platformer game project using Unreal Engine 5, Blueprints."
+           data-fr="Un jeu de plateform développé en solo avec Unreal Engine 5, en Blueprints.">
+           A platformer game project using Unreal Engine 5, Blueprints.
+        </p>
 
-            <div class="line">
-                <img src="../Images/ProjectsPages/ParkourRace/ParkourRaceIddle.png" />
-                <p>
-                    The project focused on delivering key elements of Fall Guys, including:<br>
-                    <br>
-                    Trap and obstacle mechanics, such as spinning bars, falling platforms, and moving blocks, to challenge the player.<br>
-                    A player-controlled character with physics-based movement and animations, ensuring a playful, responsive feel.<br>
-                    Multiple maps, each with unique layouts and challenges, to keep gameplay fresh and engaging.<br>
-                    The objective was to create a functional and entertaining prototype while mastering key Unreal Engine 5 tools and workflows.<br>
-                </p>
-            </div>
+        <ul class="tag-list">
+          <li>Unreal Engine 5</li>
+          <li>Blueprints</li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="line">
-                <p>
-                    As the sole developer, I:<br>
-                    <br>
-                    Designed and implemented trap and obstacle systems, ensuring they interacted smoothly with player physics.<br>
-                    Built a player character system with movement, jumping, and ragdoll-like physics to capture the chaotic fun of Fall Guys.<br>
-                    Created maps with distinct challenges, leveraging Unreal Engine 5’s powerful level design tools to make environments visually and mechanically engaging.<br>
-                </p>
-                <img src="../Images/ProjectsPages/ParkourRace/ParkourRaceOver.png" />
-            </div>
+    <!-- CONTENU -->
+    <div class="page-content">
+      <section>
+        <h3 data-en="Overview" data-fr="Présentation">Overview</h3>
+        <div class="placeholder"
+             data-en="Add your project overview here."
+             data-fr="Ajoute la présentation du projet ici.">Add your project overview here.</div>
+      </section>
 
-            <div class="line">
-                <div class="line-text-only">
-                    <p>
-                        This project allowed me to dive deep into Unreal Engine 5, gaining hands-on experience with Blueprints, physics systems, and level design.<br>
-                        By recreating the energetic and unpredictable gameplay of Fall Guys, I also improved my ability to balance mechanics for fun and fairness.<br>
-                    </p>
-                </div>
-            </div>
-        </div>
+      <section>
+        <h3 data-en="Technical environment" data-fr="Environnement technique">Technical environment</h3>
+        <div class="placeholder"
+             data-en="Technologies / tools"
+             data-fr="Technologies / outils">Technologies / tools</div>
+      </section>
 
+      <section>
+        <h3 data-en="My contributions" data-fr="Mes contributions">My contributions</h3>
+        <div class="placeholder"
+             data-en="Write about your tasks and responsibilities here."
+             data-fr="Décris tes tâches et responsabilités ici.">Write about your tasks and responsibilities here.</div>
+      </section>
+
+      <section>
+        <h3 data-en="Gallery" data-fr="Galerie">Gallery</h3>
+        <div class="placeholder"
+             data-en="Replace this box with an image or screenshot."
+             data-fr="Remplace cette zone par une image ou une capture.">Replace this box with an image or screenshot.</div>
+      </section>
     </div>
 
-    <footer>
-        <div class="footer-column">
-            <h3>LINK</h3>
-            <a href="https://github.com/ValckeMalo">GITHUB</a>
-            <a href="https://www.linkedin.com/in/malo-valcke-066550262/">LINKEDIN</a>
-        </div>
+    <!-- CAPTURES ET MÉDIAS -->
+    <section class="page-media">
+      <h3 data-en="Screenshots and media" data-fr="Captures et médias">Screenshots and media</h3>
 
-        <div class="footer-column">
-            <h3>ENGINE</h3>
-            <p>BLUEPRINT</p>
-            <a href="https://www.unrealengine.com/en-US/unreal-engine-5">UNREAL ENGINE 5</a>
-        </div>
+      <div class="media-grid">
+        <figure class="media-item">
+          <div class="media-slot" data-en="Image slot 1" data-fr="Emplacement image 1">Image slot 1</div>
+          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+        </figure>
 
-        <div class="footer-column">
-            <h3>Team</h3>
+        <figure class="media-item">
+          <div class="media-slot" data-en="Image slot 2" data-fr="Emplacement image 2">Image slot 2</div>
+          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-            <div class="team-grid">
-                <div class="team-line">
-                    <h4>DEVELOPERS :</h4>
-                    <a href="https://www.linkedin.com/in/malo-valcke-066550262/" target="_blank">Valcke Malo</a>
-                </div>
+  <footer>
+    <div class="footer-column">
+      <h3>LINK</h3>
+      <a href="https://github.com/ValckeMalo">GITHUB</a>
+      <a href="https://www.linkedin.com/in/malo-valcke-066550262/">LINKEDIN</a>
+    </div>
+  </footer>
 
-            </div>
-        </div>
-    </footer>
+  <script src="../Js/Portfolio.js"></script>
 </body>
-<script src="../Js/GamePageEvent.js"></script>
-<script src="../Js/Portfolio.js"></script>
 </html>

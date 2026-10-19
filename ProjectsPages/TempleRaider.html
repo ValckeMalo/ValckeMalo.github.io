@@ -1,124 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valcke Malo Protfolio | Official website</title>
-    <link rel="stylesheet" href="../CSS/Main.css" />
-    <link rel="stylesheet" href="../CSS/GamePage.css" />
-    <link rel="stylesheet" href="../CSS/Portfolio.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Raider | Malo Valcke</title>
+  <link rel="stylesheet" href="../CSS/Main.css" />
+  <link rel="stylesheet" href="../CSS/Portfolio.css" />
+  <link rel="stylesheet" href="../CSS/ProjectPage.css" />
 </head>
 
-<body>
+<body class="has-hero"
+      style="--theme-top: #4a3828; 
+             --theme-mid: #2b1f15; 
+             --theme-bottom: #120c08; 
+             --theme-dark: 32, 24, 18; 
+             --theme-card: 66, 50, 38; 
+             --theme-accent: #f59e0b; 
+             --hero-position: center 20%">
+
   <a class="back-to-projects" href="../index.html" data-en="← Back to projects" data-fr="← Retour aux projets" aria-label="Back to projects">← Back to projects</a>
 
-    <header>
-        <div class="navigator">
-            <h1>Valcke Malo</h1>
-            <a href="../index.html" data-en="Projects" data-fr="Projets">Projects</a>
-            <a href="../About.html" data-en="About" data-fr="À propos de moi">About</a>
-            <a href="../Contact.html" data-en="Contact" data-fr="Contacte">Contact</a>
-            <button id="language-toggle" type="button">FR</button>
-        </div>
-    </header>
+  <header>
+    <div class="navigator">
+      <h1>Malo Valcke</h1>
+      <a href="../index.html" data-en="Projects" data-fr="Projets">Projects</a>
+      <a href="../About.html" data-en="About" data-fr="À propos">About</a>
+      <a href="../Contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+      <button id="language-toggle" type="button">FR</button>
+    </div>
+  </header>
 
-    <div class="page">
-        <div class="background">
-            <img src="../Images/ProjectsPages/TempleRaider/TempleRaiderHome.png" alt="HomeScreen" />
-        </div>
-
-        <div class="project-hero-content">
-        <span class="project-kicker">GAME PROJECT</span>
-        <h1>Temple Raider</h1>
+  <main>
+    <!-- BANNIÈRE -->
+    <section class="page-hero">
+      <div class="page-hero-media">
+        <img src="../Images/ProjectsPages/TempleRaider/TempleRaiderHome.png" alt="" />
       </div>
 
-      <div class="game-buttons">
-            <button class="game-navigation-btn" onclick="showUniqueSection('overview')" id="overview-btn">
-                Overview
-            </button>
-            <button class="game-navigation-btn"
-                onclick="window.location.href='https://github.com/ValckeMalo/UE5-TempleRaider';">Github Link</button>
-        </div>
+      <div class="page-hero-inner">
+        <p class="eyebrow"
+           data-en="GAME PROTOTYPE"
+           data-fr="PROTOTYPE DE JEU">
+          Game prototype
+        </p>
 
-        <div id="overview-section" class="section">
+        <h2>Temple Raider</h2>
 
-            <div class="line">
-                <div class="line-text-only">
-                    <p>
-                        Over the course of several weeks, I undertook a project to create a puzzle game using Unreal Engine 5, combining C++ and Blueprints to implement the core gameplay mechanics.<br>
-                        This exercise was designed to deepen my understanding of Unreal's scripting systems while crafting a game that emphasized logic and creativity.<br>
-                    </p>
-                </div>
-            </div>
+        <p class="hero-summary"
+           data-en="A solo puzzle game project using Unreal Engine 5, C++ and Blueprints."
+           data-fr="Un jeu de réflexion développé en solo avec Unreal Engine 5, C++ et Blueprints.">
+           A solo puzzle game project using Unreal Engine 5, C++ and Blueprints.
+        </p>
 
-            <div class="line">
-                <img src="../Images/ProjectsPages/TempleRaider/TempleRaiderKey.png" />
-                <p>
-                    The puzzle game centered around mechanics such as:<br>
-                    <br>
-                    Interactive objects, like levers, pressure plates, and movable blocks, which players could manipulate to solve challenges.<br>
-                    Dynamic level mechanics, where player actions directly altered the environment, unlocking new paths or activating mechanisms.<br>
-                    A system for progression tracking, ensuring puzzles became more challenging as the player advanced through levels.<br>
-                    The focus was on creating an engaging, logic-driven experience that highlighted both technical and design skills.<br>
-                </p>
-            </div>
+        <ul class="tag-list">
+          <li>Unreal Engine 5</li>
+          <li>C++</li>
+          <li>Blueprints</li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="line">
-                <p>
-                    In this solo project, I worked on:<br>
-                    <br>
-                    Core gameplay mechanics in C++, such as player-object interactions and game logic, ensuring efficiency and flexibility.<br>
-                    Leveraging Blueprints to rapidly prototype and iterate on puzzles, fine-tuning gameplay and testing new ideas.<br>
-                    Designing and implementing puzzle levels, crafting scenarios that required logical thinking and experimentation to solve.<br>
-                </p>
-                <img src="../Images/ProjectsPages/TempleRaider/TempleRaiderChest.png" />
-            </div>
+    <!-- CONTENU -->
+    <div class="page-content">
+      <section>
+        <h3 data-en="Overview" data-fr="Présentation">Overview</h3>
+        <div class="placeholder"
+             data-en="Add your project overview here."
+             data-fr="Ajoute la présentation du projet ici.">Add your project overview here.</div>
+      </section>
 
-            <div class="line">
-                <div class="line-text-only">
-                    <p>
-                        This project allowed me to blend C++ and Blueprint workflows, providing valuable insights into the strengths of each system.<br>
-                        It also honed my ability to design puzzles that balance challenge and accessibility, ensuring an engaging experience for players.<br>
-                    </p>
-                </div>
-            </div>
+      <section>
+        <h3 data-en="Technical environment" data-fr="Environnement technique">Technical environment</h3>
+        <div class="placeholder"
+             data-en="Technologies / tools"
+             data-fr="Technologies / outils">Technologies / tools</div>
+      </section>
 
-            <div class="line">
-                <img src="../Images/ProjectsPages/TempleRaider/TempleRaiderPoids.png" />
-                <img src="../Images/ProjectsPages/TempleRaider/TempleRaiderSimon.png" />
-            </div>
-        </div>
+      <section>
+        <h3 data-en="My contributions" data-fr="Mes contributions">My contributions</h3>
+        <div class="placeholder"
+             data-en="Write about your tasks and responsibilities here."
+             data-fr="Décris tes tâches et responsabilités ici.">Write about your tasks and responsibilities here.</div>
+      </section>
 
+      <section>
+        <h3 data-en="Gallery" data-fr="Galerie">Gallery</h3>
+        <div class="placeholder"
+             data-en="Replace this box with an image or screenshot."
+             data-fr="Remplace cette zone par une image ou une capture.">Replace this box with an image or screenshot.</div>
+      </section>
     </div>
 
-    <footer>
-        <div class="footer-column">
-            <h3>LINK</h3>
-            <a href="https://github.com/ValckeMalo">GITHUB</a>
-            <a href="https://www.linkedin.com/in/malo-valcke-066550262/">LINKEDIN</a>
-        </div>
+    <!-- CAPTURES ET MÉDIAS -->
+    <section class="page-media">
+      <h3 data-en="Screenshots and media" data-fr="Captures et médias">Screenshots and media</h3>
 
-        <div class="footer-column">
-            <h3>ENGINE</h3>
-            <p>C++</p>
-            <p>BLUEPRINT</p>
-            <a href="https://www.unrealengine.com/en-US/unreal-engine-5">UNREAL ENGINE 5</a>
-        </div>
+      <div class="media-grid">
+        <figure class="media-item">
+          <div class="media-slot" data-en="Image slot 1" data-fr="Emplacement image 1">Image slot 1</div>
+          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+        </figure>
 
-        <div class="footer-column">
-            <h3>Team</h3>
+        <figure class="media-item">
+          <div class="media-slot" data-en="Image slot 2" data-fr="Emplacement image 2">Image slot 2</div>
+          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-            <div class="team-grid">
-                <div class="team-line">
-                    <h4>DEVELOPERS :</h4>
-                    <a href="https://www.linkedin.com/in/malo-valcke-066550262/" target="_blank">Valcke Malo</a>
-                </div>
+  <footer>
+    <div class="footer-column">
+      <h3>LINK</h3>
+      <a href="https://github.com/ValckeMalo">GITHUB</a>
+      <a href="https://www.linkedin.com/in/malo-valcke-066550262/">LINKEDIN</a>
+    </div>
+  </footer>
 
-            </div>
-        </div>
-    </footer>
+  <script src="../Js/Portfolio.js"></script>
 </body>
-<script src="../Js/GamePageEvent.js"></script>
-<script src="../Js/Portfolio.js"></script>
 </html>

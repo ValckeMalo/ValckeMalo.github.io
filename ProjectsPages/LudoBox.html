@@ -1,15 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A cross-platform board game collection application built with .NET MAUI, Supabase and PostgreSQL." />
-  <title>Board Game Tracker | Malo Valcke</title>
+  <title>LudoBox | Malo Valcke</title>
   <link rel="stylesheet" href="../CSS/Main.css" />
   <link rel="stylesheet" href="../CSS/Portfolio.css" />
+  <link rel="stylesheet" href="../CSS/ProjectPage.css" />
 </head>
-<body>
+
+<body class="has-hero"
+      style="--theme-top: #1e293b; 
+             --theme-mid: #0f172a; 
+             --theme-bottom: #020617; 
+             --theme-dark: 15, 23, 42; 
+             --theme-card: 30, 41, 59; 
+             --theme-accent: #38bdf8; 
+             --hero-position: center 20%">
+                
   <a class="back-to-projects" href="../index.html" data-en="← Back to projects" data-fr="← Retour aux projets" aria-label="Back to projects">← Back to projects</a>
 
   <header>
@@ -22,59 +30,86 @@
     </div>
   </header>
 
-  <main class="portfolio detail-page">
-<section class="detail-hero">
-<p class="eyebrow"
-       data-en="PERSONAL PROJECT · IN DEVELOPMENT"
-       data-fr="PROJET PERSONNEL · EN DÉVELOPPEMENT">
-      PERSONAL PROJECT · IN DEVELOPMENT
-    </p>
+  <main>
+    <!-- BANNIÈRE -->
+    <section class="page-hero">
+      <div class="page-hero-media">
+        <img src="../Images/ProjectsPages/LudoBox/LudoBox_Home.png" alt="" />
+      </div>
 
-    <h2>LudoBox</h2>
-</section>
+      <div class="page-hero-inner">
+        <p class="eyebrow"
+           data-en="PERSONAL PROJECT · IN PROGRESS"
+           data-fr="PROJET PERSONEL · EN DÉVELOPPEMENT">
+          PERSONAL PROJECT · IN PROGRESS
+        </p>
 
+        <h2>LudoBox</h2>
+        <p class="hero-summary"
+           data-en="A cross-platform board game collection app built with .NET MAUI, Supabase and the BoardGameGeek API."
+           data-fr="Une application multiplateforme de gestion de collection de jeux de société, développée avec .NET MAUI, Supabase et l'API BoardGameGeek.">
+          A cross-platform board game collection app built with .NET MAUI, Supabase and the BoardGameGeek API.
+        </p>
 
-    <p data-en="A cross-platform application for tracking a board game collection, inspired by services such as Letterboxd and TV Time."
-       data-fr="Une application multiplateforme pour suivre une collection de jeux de société, inspirée de services comme Letterboxd et TV Time.">
-      A cross-platform application for tracking a board game collection,
-      inspired by services such as Letterboxd and TV Time.
-    </p>
+        <ul class="tag-list">
+          <li>C#</li>
+          <li>.NET MAUI</li>
+          <li>PostreSQL</li>
+          <li>Supabase</li>
+          <li>Rest API</li>
+          <li>Mobile</li>
+          <li>PC</li>
+        </ul>
+      </div>
+    </section>
 
-    <h3 data-en="Technologies" data-fr="Technologies">Technologies</h3>
-    <p>C# · .NET MAUI · Supabase · PostgreSQL · BoardGameGeek API</p>
+    <!-- CONTENU -->
+    <div class="page-content">
+      <section>
+        <h3 data-en="Overview" data-fr="Présentation">Overview</h3>
+        <div class="placeholder"
+             data-en="Add your project overview here."
+             data-fr="Ajoute la présentation du projet ici.">Add your project overview here.</div>
+      </section>
 
-    <h3 data-en="Current features" data-fr="Fonctionnalités actuelles">
-      Current features
-    </h3>
-    <ul>
-      <li data-en="User registration and login."
-          data-fr="Inscription et connexion des utilisateurs.">
-        User registration and login.
-      </li>
-      <li data-en="PostgreSQL database with related tables."
-          data-fr="Base PostgreSQL avec des tables relationnelles.">
-        PostgreSQL database with related tables.
-      </li>
-      <li data-en="Integration with the BoardGameGeek API."
-          data-fr="Intégration de l'API BoardGameGeek.">
-        Integration with the BoardGameGeek API.
-      </li>
-      <li data-en="First version of the user interface."
-          data-fr="Première version de l'interface utilisateur.">
-        First version of the user interface.
-      </li>
-    </ul>
+      <section>
+        <h3 data-en="Technical environment" data-fr="Environnement technique">Technical environment</h3>
+        <div class="placeholder"
+             data-en="Technologies / tools"
+             data-fr="Technologies / outils">Technologies / tools</div>
+      </section>
 
-    <h3 data-en="Goals" data-fr="Objectifs">Goals</h3>
-    <p data-en="This project lets me explore application development beyond game engines, including cross-platform UI development, authentication, relational data modelling and external API integration."
-       data-fr="Ce projet me permet d'explorer le développement d'applications au-delà des moteurs de jeu, notamment les interfaces multiplateformes, l'authentification, la modélisation de données relationnelles et l'intégration d'API externes.">
-      This project lets me explore application development beyond game engines.
-    </p>
+      <section>
+        <h3 data-en="My contributions" data-fr="Mes contributions">My contributions</h3>
+        <div class="placeholder"
+             data-en="Write about your tasks and responsibilities here."
+             data-fr="Décris tes tâches et responsabilités ici.">Write about your tasks and responsibilities here.</div>
+      </section>
 
-    <p data-en="The application is still in development. Its feature set and interface may evolve."
-       data-fr="L'application est encore en développement. Ses fonctionnalités et son interface sont susceptibles d'évoluer.">
-      The application is still in development.
-    </p>
+      <section>
+        <h3 data-en="Gallery" data-fr="Galerie">Gallery</h3>
+        <div class="placeholder"
+             data-en="Replace this box with an image or screenshot."
+             data-fr="Remplace cette zone par une image ou une capture.">Replace this box with an image or screenshot.</div>
+      </section>
+    </div>
+
+    <!-- CAPTURES ET MÉDIAS -->
+    <section class="page-media">
+      <h3 data-en="Screenshots and media" data-fr="Captures et médias">Screenshots and media</h3>
+
+      <div class="media-grid">
+        <figure class="media-item">
+          <div class="media-slot" data-en="Image slot 1" data-fr="Emplacement image 1">Image slot 1</div>
+          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+        </figure>
+
+        <figure class="media-item">
+          <div class="media-slot" data-en="Image slot 2" data-fr="Emplacement image 2">Image slot 2</div>
+          <figcaption data-en="Add a caption" data-fr="Ajoute une légende">Add a caption</figcaption>
+        </figure>
+      </div>
+    </section>
   </main>
 
   <footer>
