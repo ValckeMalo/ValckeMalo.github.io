@@ -108,3 +108,76 @@
   .project-filters { gap: 7px; }
   .filter-button { padding: 8px 12px; font-size: .85rem; }
 }
+
+
+/* Persistent return-to-portfolio control shared by every detail page. */
+.back-to-projects {
+  position: fixed;
+  z-index: 1000;
+  top: 18px;
+  left: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  max-width: calc(100vw - 36px);
+  padding: 10px 15px;
+  border: 1px solid rgba(210, 231, 255, .42);
+  border-radius: 999px;
+  background: rgba(5, 17, 45, .86);
+  color: #f7fbff;
+  font: 700 .9rem/1.2 "Segoe UI", Arial, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, .28);
+  backdrop-filter: blur(10px);
+  transition: background .2s ease, transform .2s ease, border-color .2s ease;
+}
+.back-to-projects:hover {
+  transform: translateY(-2px);
+  background: #0758c5;
+  border-color: rgba(255,255,255,.8);
+  color: #fff;
+}
+.back-to-projects:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+
+/* Hero treatment for the newer text-based project pages. Add artwork later if desired. */
+.detail-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 0 0 30px;
+  padding: clamp(38px, 7vw, 78px) clamp(22px, 5vw, 58px);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 20px;
+  background:
+    radial-gradient(ellipse at 82% 8%, rgba(54, 151, 255, .3), transparent 42%),
+    linear-gradient(135deg, rgba(36, 73, 132, .98), rgba(5, 19, 51, .98));
+  box-shadow: 0 15px 38px rgba(0,0,0,.25);
+}
+.detail-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -55px;
+  bottom: -110px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(180, 219, 255, .15);
+  border-radius: 50%;
+  box-shadow: 0 0 0 28px rgba(180,219,255,.035), 0 0 0 58px rgba(180,219,255,.025);
+}
+.detail-hero .eyebrow { margin-bottom: 14px; }
+.detail-hero h2 { position: relative; z-index: 1; max-width: 850px; margin: 0; }
+.detail-page { width: min(960px, 100%); }
+.detail-page > h3 { margin-top: 34px; padding-bottom: 8px; border-bottom: 1px solid rgba(170, 208, 255, .2); }
+.detail-page > p:not(.eyebrow), .detail-page > ul {
+  padding: 18px 21px;
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 13px;
+  background: linear-gradient(135deg, rgba(8, 24, 62, .52), rgba(31, 66, 112, .38));
+}
+.detail-page > h3 + p, .detail-page > h3 + ul { margin-top: 14px; }
+@media (max-width: 600px) {
+  .back-to-projects { top: 10px; left: 10px; padding: 9px 12px; font-size: .82rem; }
+  .detail-hero { padding: 76px 20px 34px; border-radius: 15px; }
+  .detail-page > p:not(.eyebrow), .detail-page > ul { padding: 15px; }
+}
