@@ -116,3 +116,56 @@
   .line > p, .line-text-only p { font-size: 15px; }
   .line-text-only { padding: 0; }
 }
+
+
+/* Consistent hero title for every game and project detail page */
+.project-hero-content {
+  position: absolute;
+  z-index: 1;
+  inset: clamp(95px, 15vh, 150px) 24px auto;
+  width: min(1000px, calc(100% - 48px));
+  margin: 0 auto;
+  text-align: center;
+  pointer-events: none;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, .55);
+}
+.project-hero-content .project-kicker {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 13px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 999px;
+  background: rgba(7, 20, 54, .5);
+  color: #d8e8ff;
+  font: 700 12px/1.2 "Segoe UI", Arial, sans-serif;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.project-hero-content h1 {
+  margin: 0;
+  color: #fff;
+  font: 800 clamp(32px, 5.5vw, 66px)/1.08 "Segoe UI", Arial, sans-serif;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+.project-hero-content::after {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 4px;
+  margin: 22px auto 0;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #59b7ff, #fff);
+}
+.game-buttons { padding-top: clamp(300px, 48vh, 470px); }
+.section { scroll-margin-top: 24px; }
+.line { transition: border-color .2s ease, transform .2s ease; }
+.line:hover { border-color: rgba(124, 190, 255, .32); }
+footer { position: relative; z-index: 2; }
+@media (max-width: 760px) {
+  .project-hero-content { inset: 100px 12px auto; width: calc(100% - 24px); }
+  .project-hero-content .project-kicker { font-size: 10px; letter-spacing: .12em; }
+  .project-hero-content h1 { font-size: clamp(29px, 8vw, 44px); }
+  .project-hero-content::after { margin-top: 15px; }
+  .game-buttons { padding-top: 36vh; }
+}
